@@ -6,8 +6,9 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { MantineProvider } from '@mantine/core';
 import { Navbar } from '@/components/Navbar/Navbar';
 import { AuthProvider } from '@/contexts/AuthContext';
+import { poppins } from '@/fonts';
 import { queryClient } from '@/lib/react-query';
-import { theme } from '../theme';
+import { theme } from '@/theme';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -22,8 +23,10 @@ export default function App({ Component, pageProps }: AppProps) {
             />
             <link rel="shortcut icon" href="/favicon.svg" />
           </Head>
-          <Navbar />
-          <Component {...pageProps} />
+          <main className={poppins.className}>
+            <Navbar />
+            <Component {...pageProps} />
+          </main>
         </AuthProvider>
       </MantineProvider>
     </QueryClientProvider>

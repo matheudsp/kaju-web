@@ -108,14 +108,14 @@ export function Navbar() {
                   <Button
                     variant="gradient"
                     gradient={{ from: 'green', to: 'lime' }}
-                    onClick={() => handleNavigation('/signup')}
+                    onClick={() => handleNavigation('/auth/signup')}
                   >
                     Assinar
                   </Button>
                   <Button
                     variant="outline"
                     color="green"
-                    onClick={() => handleNavigation('/login')}
+                    onClick={() => handleNavigation('/auth/login')}
                   >
                     Fazer login
                   </Button>
@@ -172,7 +172,7 @@ export function Navbar() {
               <Button
                 size="lg"
                 fullWidth
-                onClick={() => handleNavigation('/signup')}
+                onClick={() => handleNavigation('/auth/signup')}
                 variant="gradient"
                 gradient={{ from: 'green', to: 'lime' }}
               >
@@ -183,7 +183,7 @@ export function Navbar() {
                 color="green"
                 size="lg"
                 fullWidth
-                onClick={() => handleNavigation('/login')}
+                onClick={() => handleNavigation('/auth/login')}
               >
                 Fazer login
               </Button>
