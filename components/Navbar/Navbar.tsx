@@ -23,7 +23,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { label: 'Início', path: '/' },
-  { label: 'Preços', path: '/precos' },
+  { label: 'Preços', path: '/pricing' },
   { label: 'Como funciona?', path: '/como-funciona' },
   { label: 'Suporte', path: '/suporte' },
 ];
