@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { MantineProvider } from '@mantine/core';
+import { Navbar } from '@/components/Navbar/Navbar';
 import { AuthProvider } from '@/contexts/AuthContext';
 import { queryClient } from '@/lib/react-query';
 import { theme } from '../theme';
@@ -21,8 +22,9 @@ export default function App({ Component, pageProps }: AppProps) {
             />
             <link rel="shortcut icon" href="/favicon.svg" />
           </Head>
+          <Navbar />
+          <Component {...pageProps} />
         </AuthProvider>
-        <Component {...pageProps} />
       </MantineProvider>
     </QueryClientProvider>
   );
