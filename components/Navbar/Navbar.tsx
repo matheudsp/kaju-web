@@ -24,7 +24,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Início', path: '/' },
   { label: 'Preços', path: '/pricing' },
   { label: 'Como funciona?', path: '/how-to' },
-  { label: 'Suporte', path: '/suporte' },
+  { label: 'Suporte', path: '/support' },
 ];
 
 export function Navbar() {
