@@ -4,11 +4,11 @@ import {
   IconBrandWhatsapp,
   IconCheck,
   IconCloudUpload,
-  IconDiscount2,
+  
   IconFlame,
   IconReportAnalytics,
   IconUsers,
-  IconX,
+
 } from '@tabler/icons-react';
 import {
   Badge,
@@ -20,7 +20,7 @@ import {
   Grid,
   Group,
   List,
-  rem,
+  
   Switch,
   Text,
   ThemeIcon,
@@ -33,7 +33,7 @@ export default function PricingPage() {
   const router = useRouter();
   const theme = useMantineTheme();
 
-  const handleSubscribe = (plan: string) => {
+  const handleSubscribe = ()=> {
     router.push('/auth/signup');
   };
 
@@ -98,7 +98,7 @@ export default function PricingPage() {
               variant="outline"
               color="green"
               mt="xl"
-              onClick={() => handleSubscribe('iniciante')}
+              onClick={() => handleSubscribe()}
             >
               Selecionar
             </Button>
@@ -138,10 +138,13 @@ export default function PricingPage() {
               color="green"
               variant="filled"
               size="lg"
+              
               style={{
-                position: 'absolute',
+                position: 'relative',
+                display:"flex",
+                alignSelf:'center',
                 top: -15,
-                right: 'calc(50% - 60px)',
+                zIndex:20
               }}
               leftSection={<IconFlame size={14} />}
             >
@@ -179,7 +182,7 @@ export default function PricingPage() {
               variant="gradient"
               gradient={{ from: 'green', to: 'lime' }}
               mt="xl"
-              onClick={() => handleSubscribe('profissional')}
+              onClick={() => handleSubscribe()}
             >
               Selecionar
             </Button>

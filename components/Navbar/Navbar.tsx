@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { IconMoon, IconSun } from '@tabler/icons-react';
 import {
-  ActionIcon,
+  
   Box,
   Burger,
   Button,
@@ -24,7 +23,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: 'Início', path: '/' },
   { label: 'Preços', path: '/pricing' },
-  { label: 'Como funciona?', path: '/como-funciona' },
+  { label: 'Como funciona?', path: '/how-to' },
   { label: 'Suporte', path: '/suporte' },
 ];
 
